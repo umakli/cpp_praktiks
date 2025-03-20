@@ -219,8 +219,7 @@ vector<string> StringWorker::ExtractWords_var26() {
     return extracted_words;
 }
 vector<string> StringWorker::ExtractWords_var17() {
-    vector<string> words;
-    vector<int> lengths;
+    vector<string> extracted_words;
     istringstream my_stream(str);
     string word;
     while (my_stream >> word) {
@@ -232,15 +231,6 @@ vector<string> StringWorker::ExtractWords_var17() {
             //words.push_back(word);
         }
     }
-    sort(lengths.begin(), lengths.end());
-    vector<string> extracted_words;
-    int min_length = lengths[0];
-    int max_length = lengths[lengths.size() - 1];
-    for (auto i = 0; i < words.size(); i++)
-        if (words[i].length() == min_length or words[i].length() == max_length)
-        {
-            extracted_words.push_back(words[i]);
-        }
     return extracted_words;
 }
 

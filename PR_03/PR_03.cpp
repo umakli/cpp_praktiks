@@ -80,5 +80,11 @@ int main()
     for (const auto& word : words)
         cout << word << " ";
     sw->writeResultsToFile("out_var4.txt", words);
+    words.clear();
+    words = sw->ExtractWords_var17();
+    cout << endl << "Отсортированная строка 17 вариант:" << endl;
+    for (const auto& word : words)
+        cout << word << " ";
+    sw->writeResultsToFile("out_var17.txt", words);
     return 0;
 }
