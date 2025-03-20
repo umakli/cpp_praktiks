@@ -38,6 +38,7 @@ public:
 	vector<string> dec_var4();
 	vector<string> ReverseWords_var21();
 	vector<string> ExtractWords_var26();
+	vector<string> ExtractWords_var17();
 	void writeResultsToFile(const string&, vector<string>); // запись результатов в файл
 };
 
